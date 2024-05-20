@@ -14,7 +14,7 @@ int main(void)
     noecho();
     // Hide the cursor
     curs_set(0);
-    // Seed the random number generator
+    // Seed the random number generator, so that we get different random numbers each time
     srand(time(NULL));
     int pos_x = 0, pos_y = 0;
     int food_x = rand() % 25, food_y = rand() % 25;
